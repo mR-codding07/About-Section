@@ -1,0 +1,62 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+.about {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+}
+
+.image {
+    width: 678px;
+    height: 700px;
+    text-align: center; /* Center the image */
+    margin-bottom: 20px; /* Add margin for spacing between image and text */
+}
+
+.image img {
+    width: 700px; /* Set fixed width */
+    height: 700px; /* Set fixed height */
+}
+
+.content {
+    text-align: center; /* Center align text content */
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* Media query for responsive layout */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Switch to horizontal layout on larger screens */
+    }
+
+    .image,
+    .content {
+        flex: 1; /* Make both sections take equal space */
+        text-align: left; /* Left align text content */
+    }
+
+    .content {
+        padding: 0 20px; /* Add padding to content for spacing */
+    }
+}
